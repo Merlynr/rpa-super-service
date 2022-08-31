@@ -1,0 +1,7 @@
+<!-- nunjunks.nj 文件代码 -->
+<h1>nunjunks</h1>
+<ul>
+{% for item in items %}
+  <li>{{ item.title }}</li>
+{% endfor %}
+</ul>

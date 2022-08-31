@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["plugin:react/recommended"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      // 支持在全局使用 return
+      "globalReturn": true,
+
+      // 默认使用严格模式（ES 5 或 以上）
+      "impliedStrict": true,
+
+      // 支持 JSX 语法
+      "jsx": true
+    }
+  },
+  "rules": {
+    "indent": ["error", "space"],
+    "linebreak-style": ["error", "windows"],
+    "semi": ["error", "always"],
+    // 使用 "off", "warn", "error"
+    "no-console": "warn",
+    // 使用数字（不推荐，语义不明确）
+    "for-direction": 1,
+    // 数组语法，但没有额外配置项
+    "no-else-return": ["error"],
+    // 数组语法，一个配置项
+    "eqeqeq": ["error", "always"],
+    // 数组语法，多个配置项
+    "quotes": ["error", "double", { "avoidEscape": true }]
+  },
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/output/**",
+    "**/logs/**",
+    "**/node_modules/**"
+  ]
+}
